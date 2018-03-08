@@ -1,1 +1,5 @@
-Rails Authentication Notes
+**Rails Authentication Notes**
+
+*text*
+
+
