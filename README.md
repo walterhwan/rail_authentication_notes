@@ -1,6 +1,6 @@
 # Ruby on Rails - Authentication Notes
 
-This document provide collection of short reference of how to write various rails code in a single page so it is easier to search
+This document provide collection of short reference of how to write various rails code in a single page so it is easier to search. However, it won't explain exactly how to use them.
 
 # Start Your Rails Project
 
@@ -27,6 +27,13 @@ end
 ```ruby
 rails db:reset
 ```
+
+# To-do list when adding a new feature/resource
++ Migrations
++ Model definition (validations, associations, helper methods)
++ Routes
++ Controller + controller actions
++ Views (should coincide with the actions that render them)
 
 # Rails Commands
 
@@ -74,7 +81,7 @@ rails routes
 rails c
 ```
 
-## Useful Alias
+# Useful Alias
 ```ruby
 alias rr='rails routes'
 alias rsgm='rails g migration'
@@ -89,10 +96,10 @@ def change
     t.string :password_digest, null: false
     t.string :session_token, null: false
 
+    t.index :session_token, unique: true
+
     t.timestamp
   end
-
-  add_index :users, :session_token, unique: true
 end
 ```
 
@@ -170,3 +177,12 @@ def auth_token_input
       value=\"#{ form_authenticity_token }\">".html_safe
 end
 ```
+
+# Views Code Snippet
+
+### Use PATCH or DELETE HTML Method in `<form>` tag
+```html
+<input type="hidden" name="_method" value="PATCH">
+<input type="hidden" name="_method" value="DELETE">
+```
+i.e.
