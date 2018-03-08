@@ -2,9 +2,35 @@
 
 This document provide collection of short reference of how to write various rails code in a single page so it is easier to search
 
+# Start Your Rails Project
+
+### Creating a new rails project in postgre
+```bash
+rails new app_name --database=postgresql
+```
+
+### Add useful gems
+```ruby
+# Gemfile
+gem 'bcrypt'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
+  gem 'annotate'
+  gem 'faker'
+end
+```
+
+### Reset Database
+```ruby
+rails db:reset
+```
+
 # Rails Commands
 
-#### Add bash alias
+### Add bash alias
 ```bash
 alias my_command='long bash commands'
 ```
@@ -13,35 +39,37 @@ For example, if you want to use ```ber``` as ```bundle exec rspec```
 alias ber='bundle exec rspec'
 ```
 
-#### Creating a new rails project in postgre
-```bash
-rails new app_name --database=postgresql
-```
-
-#### Generate Migration
+### Generate Migration
 ```bash
 rails g migration CreateObjects
 ```
 
-#### Destroy database, re-create database, and migrate your current schema
+### Destroy database, re-create database, and migrate your current schema
 ```bash
 rails db:drop db:reset db:migrate
 ```
 
-#### Generate Controllers
+### Generate Controllers
 ```bash
 rails g controller Objects
 ```
 this will generate objects_controller.rb
 
-#### Check Routes
+### Check Routes
 ```bash
 rails routes
 ```
 
-#### Command line in Rails
+### Command line in Rails
 ```bash
 rails c
+```
+
+## Useful Alias
+```ruby
+alias rr='rails routes'
+alias rsgm='rails g migration'
+alias rsm='rails db:migrate'
 ```
 
 # General User Table
@@ -62,36 +90,36 @@ end
 
 # BCrypt
 
-#### Digests a password and builds a Password object.
+### Digests a password and builds a Password object.
 ```ruby
 BCrypt::Password.create(password)
 ```
 
-#### Builds a Password object for the digest.
+### Builds a Password object for the digest.
 ```ruby
 BCrypt::Password.new(password_digest)
 ```
 
-#### Checks if a password matches a digest.
+### Checks if a password matches a digest.
 ```ruby
 BCrypt::Password.is_password?(password)
 ```
 
-#### Check if a password_digest String is indeed create by a password
+### Check if a password_digest String is indeed create by a password
 ```ruby
 BCrypt::Password.new(password_digest).is_password?(password)
 ```
 
 # Session Token
 
-#### Generate Session Token
+### Generate Session Token
 ```ruby
 def self.generate_session_token
   SecureRandom::urlsafe_base64(16)
 end
 ```
 
-#### Reset Session Token
+### Reset Session Token
 ```ruby
 def reset_session_token!
   self.session_token = self.class.generate_session_token
@@ -100,7 +128,7 @@ def reset_session_token!
 end
 ```
 
-#### Ensure Session Token
+### Ensure Session Token
 Use `after_initialize` to ensure user have `session_token` right after `User.new`
 ```ruby
 after_initialize :ensure_session_token
@@ -111,7 +139,7 @@ def ensure_session_token
 end
 ```
 
-#### HTML "methods" and Their Corresponding Controller Action
+### HTML "methods" and Their Corresponding Controller Action
 HTML methods | Controller Action
 --- | ---
 GET | index
