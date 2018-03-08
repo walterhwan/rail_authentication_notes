@@ -31,6 +31,7 @@ Generate Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcade
 Reset Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Reset Session Token$/;"	function	line:138
 Ensure Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Ensure Session Token$/;"	function	line:147
 HTML "methods" and Their Corresponding Controller Action	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### HTML "methods" and Their Corresponding Controller Action$/;"	function	line:158
-View Helpers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# View Helpers$/;"	function	line:171
-Views Code Snippet	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Views Code Snippet$/;"	function	line:181
-Use PATCH or DELETE HTML Method in `<form>` tag	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Use PATCH or DELETE HTML Method in `<form>` tag$/;"	function	line:183
+View Helpers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# View Helpers$/;"	function	line:176
+Views Code Snippet	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Views Code Snippet$/;"	function	line:186
+Use PATCH or DELETE HTML Method in `<form>` tag	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Use PATCH or DELETE HTML Method in `<form>` tag$/;"	function	line:188
+Insert a partial to a erb file	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Insert a partial to a erb file$/;"	function	line:196

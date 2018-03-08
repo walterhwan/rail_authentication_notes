@@ -156,17 +156,22 @@ end
 ```
 
 ### HTML "methods" and Their Corresponding Controller Action
-HTML methods | Controller Action
---- | ---
-GET | index
-Post | create
-GET | new
-GET | edit
-GET | show
-PATCH | update
-PUT | update
-DELETE | destroy
+Prefix | HTML methods | Controller Action
+--- | --- | ---
+bands | GET | index
+new_band | GET | new
+edit_band | GET | edit
+band | GET | show
+ | Post | create
+ | PATCH | update
+ | PUT | update
+ | DELETE | destroy
 
+bands GET    /bands(.:format)          bands#index
+            POST   /bands(.:format)          bands#create
+   new_band GET    /bands/new(.:format)      bands#new
+  edit_band GET    /bands/:id/edit(.:format) bands#edit
+       band GET
 
 # View Helpers
 `app/helpers/application_helper.rb`
@@ -186,3 +191,30 @@ end
 <input type="hidden" name="_method" value="DELETE">
 ```
 i.e.
+
+
+### Insert a partial to a erb file
+```html+erb
+<%= render "my_partial" %>
+```
+
+i.e. Insert a partial with local variables
+
+```html+erb
+<!-- app/views/user/new.html.erb -->
+<%= render "form", user: @user, action: :new %>
+
+<!-- app/views/user/edit.html.erb -->
+<%= render "form", user: @user, action: :edit %>
+
+<!-- app/views/user/_form.html.erb -->
+<!-- Is this a new user to create, or an existing one to edit? -->
+<% action_url = (action == :new) ? users_url : user_url(user) %>
+
+<form action="<%= action_url %>" method="post">
+  <% if action == :edit %>
+    <input type="hidden" name="_method" value="patch">
+  <% end %>
+  <!-- inputs go here... -->
+</form>
+```
