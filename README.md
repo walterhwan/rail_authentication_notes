@@ -49,6 +49,11 @@ rails g migration CreateObjects
 rails db:drop db:reset db:migrate
 ```
 
+### Generate Model and Pre-populate Migration at once
+```ruby
+rails g model Object col_name1:datatype col_name2:datatype ...
+```
+
 ### Generate Controllers
 ```bash
 rails g controller Objects
