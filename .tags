@@ -9,19 +9,19 @@ Add bash alias	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_
 Generate Migration	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Migration$/;"	function	line:42
 Destroy database, re-create database, and migrate your current schema	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Destroy database, re-create database, and migrate your current schema$/;"	function	line:47
 Generate Model and Pre-populate Migration at once	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Model and Pre-populate Migration at once$/;"	function	line:52
-Generate Controllers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Controllers$/;"	function	line:57
-Check Routes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Check Routes$/;"	function	line:63
-Command line in Rails	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Command line in Rails$/;"	function	line:68
-Useful Alias	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^## Useful Alias$/;"	function	line:73
-General User Table	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# General User Table$/;"	function	line:80
-BCrypt	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# BCrypt$/;"	function	line:96
-Digests a password and builds a Password object.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Digests a password and builds a Password object.$/;"	function	line:98
-Builds a Password object for the digest.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Builds a Password object for the digest.$/;"	function	line:103
-Checks if a password matches a digest.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Checks if a password matches a digest.$/;"	function	line:108
-Check if a password_digest String is indeed create by a password	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Check if a password_digest String is indeed create by a password$/;"	function	line:113
-Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Session Token$/;"	function	line:118
-Generate Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Session Token$/;"	function	line:120
-Reset Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Reset Session Token$/;"	function	line:127
-Ensure Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Ensure Session Token$/;"	function	line:136
-HTML "methods" and Their Corresponding Controller Action	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### HTML "methods" and Their Corresponding Controller Action$/;"	function	line:147
-View Helpers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# View Helpers$/;"	function	line:160
+Generate Controllers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Controllers$/;"	function	line:61
+Check Routes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Check Routes$/;"	function	line:67
+Command line in Rails	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Command line in Rails$/;"	function	line:72
+Useful Alias	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^## Useful Alias$/;"	function	line:77
+General User Table	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# General User Table$/;"	function	line:84
+BCrypt	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# BCrypt$/;"	function	line:100
+Digests a password and builds a Password object.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Digests a password and builds a Password object.$/;"	function	line:102
+Builds a Password object for the digest.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Builds a Password object for the digest.$/;"	function	line:107
+Checks if a password matches a digest.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Checks if a password matches a digest.$/;"	function	line:112
+Check if a password_digest String is indeed create by a password	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Check if a password_digest String is indeed create by a password$/;"	function	line:117
+Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Session Token$/;"	function	line:122
+Generate Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Session Token$/;"	function	line:124
+Reset Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Reset Session Token$/;"	function	line:131
+Ensure Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Ensure Session Token$/;"	function	line:140
+HTML "methods" and Their Corresponding Controller Action	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### HTML "methods" and Their Corresponding Controller Action$/;"	function	line:151
+View Helpers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# View Helpers$/;"	function	line:164

@@ -53,6 +53,10 @@ rails db:drop db:reset db:migrate
 ```ruby
 rails g model Object col_name1:datatype col_name2:datatype ...
 ```
+i.e.
+```ruby
+rails g model User username:string password_digest:string session_token:string
+```
 
 ### Generate Controllers
 ```bash
