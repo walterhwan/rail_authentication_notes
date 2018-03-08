@@ -51,9 +51,9 @@ alias ber='bundle exec rspec'
 rails g migration CreateObjects
 ```
 
-### Destroy database, re-create database, and migrate your current schema
+### Re-create database, migrate your current schema, updates
 ```bash
-rails db:drop db:reset db:migrate
+rails db:reset db:migrate db:test:load
 ```
 
 ### Generate Model and Pre-populate Migration at once
@@ -184,7 +184,7 @@ def auth_token_input
 end
 ```
 
-# Views Code Snippet
+# Rails Views Code Snippet
 
 ### Use PATCH or DELETE HTML Method in `<form>` tag
 ```html
@@ -193,6 +193,16 @@ end
 ```
 i.e.
 
+
+### Button_to and Link_to
+```html+erb
+<%= button_to 'my_link_text', aciton_rul, method: :html_method %>
+<%= link_to 'my_link_text', aciton_rul, method: :html_method %>
+```
+i.e.
+```html+erb
+<%= button_to 'Log out', session_url, method: :delete %>
+```
 
 ### Insert a partial to a erb file
 ```html+erb

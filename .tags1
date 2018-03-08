@@ -14,7 +14,7 @@ To-do list when adding a new feature/resource	/Users/walter/Documents/Programing
 Rails Commands	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Rails Commands$/;"	function	line:38
 Add bash alias	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Add bash alias$/;"	function	line:40
 Generate Migration	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Migration$/;"	function	line:49
-Destroy database, re-create database, and migrate your current schema	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Destroy database, re-create database, and migrate your current schema$/;"	function	line:54
+Re-create database, migrate your current schema, updates	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Re-create database, migrate your current schema, updates$/;"	function	line:54
 Generate Model and Pre-populate Migration at once	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Model and Pre-populate Migration at once$/;"	function	line:59
 Generate Controllers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Controllers$/;"	function	line:68
 Check Routes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Check Routes$/;"	function	line:74
@@ -33,7 +33,8 @@ Reset Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/
 Ensure Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Ensure Session Token$/;"	function	line:152
 HTML "methods" and Their Corresponding Controller Action	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### HTML "methods" and Their Corresponding Controller Action$/;"	function	line:163
 View Helpers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# View Helpers$/;"	function	line:177
-Views Code Snippet	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Views Code Snippet$/;"	function	line:187
+Rails Views Code Snippet	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Rails Views Code Snippet$/;"	function	line:187
 Use PATCH or DELETE HTML Method in `<form>` tag	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Use PATCH or DELETE HTML Method in `<form>` tag$/;"	function	line:189
-Insert a partial to a erb file	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Insert a partial to a erb file$/;"	function	line:197
-Record error messages in flash cookie	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Record error messages in flash cookie$/;"	function	line:223
+Button_to and Link_to	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Button_to and Link_to$/;"	function	line:197
+Insert a partial to a erb file	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Insert a partial to a erb file$/;"	function	line:207
+Record error messages in flash cookie	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Record error messages in flash cookie$/;"	function	line:233
