@@ -103,6 +103,11 @@ def change
 end
 ```
 
+### Oterh column attributes
+```ruby
+:default, :null, :inclusion, :presence
+```
+
 
 # BCrypt
 
@@ -156,22 +161,18 @@ end
 ```
 
 ### HTML "methods" and Their Corresponding Controller Action
-Prefix | HTML methods | Controller Action
---- | --- | ---
-bands | GET | index
-new_band | GET | new
-edit_band | GET | edit
-band | GET | show
- | Post | create
- | PATCH | update
- | PUT | update
- | DELETE | destroy
+i.e if you have object resources
 
-bands GET    /bands(.:format)          bands#index
-            POST   /bands(.:format)          bands#create
-   new_band GET    /bands/new(.:format)      bands#new
-  edit_band GET    /bands/:id/edit(.:format) bands#edit
-       band GET
+Prefix | HTML methods | Controller Action | (defalut) URI Pattern
+--- | --- | --- | ---
+objects | GET | index | /objects
+new_object | GET | new | /objects/new
+edit_object | GET | edit | /objects/:id
+object | GET | show | /objects/:id
+ | Post | create | /objects
+ | PATCH | update | /objects/:id
+ | PUT | update | /objects/:id
+ | DELETE | destroy | /objects/:id
 
 # View Helpers
 `app/helpers/application_helper.rb`
@@ -217,4 +218,11 @@ i.e. Insert a partial with local variables
   <% end %>
   <!-- inputs go here... -->
 </form>
+```
+
+### Record error messages in flash cookie
+```ruby
+flash[:errors] = object.errors.full_messages
+
+flash.now[:errors] = object.errors.full_messages
 ```
