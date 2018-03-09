@@ -36,5 +36,6 @@ View Helpers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_au
 Rails Views Code Snippet	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Rails Views Code Snippet$/;"	function	line:231
 Use PATCH or DELETE http Method in `<form>` tag	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Use PATCH or DELETE http Method in `<form>` tag$/;"	function	line:233
 Button_to and Link_to	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Button_to and Link_to$/;"	function	line:241
-Insert a partial to a erb file	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Insert a partial to a erb file$/;"	function	line:251
-Record error messages in flash cookie	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Record error messages in flash cookie$/;"	function	line:277
+Create a `_form.html.erb` so that both `new.html.erb` and `edit.html.erb` can use the partial	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Create a `_form.html.erb` so that both `new.html.erb` and `edit.html.erb` can use the partial$/;"	function	line:251
+Insert a partial to a erb file	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Insert a partial to a erb file$/;"	function	line:260
+Record error messages in flash cookie	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Record error messages in flash cookie$/;"	function	line:286

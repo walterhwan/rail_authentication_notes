@@ -248,6 +248,15 @@ i.e.
 <%= button_to 'Log out', session_url, method: :delete %>
 ```
 
+### Create a `_form.html.erb` so that both `new.html.erb` and `edit.html.erb` can use the partial
+```html+erb
+<% action_url = object.persisted? ? object_url(object) : objects_url %>
+<% method = object.persisted? ? "patch" : "post" %>
+
+<!-- ... -->
+<% submit_val = album.persisted? ? "Update" : "Create" %>
+```
+
 ### Insert a partial to a erb file
 ```html+erb
 <%= render "my_partial" %>
