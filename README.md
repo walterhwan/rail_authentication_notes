@@ -71,6 +71,15 @@ rails g controller Objects
 ```
 this will generate objects_controller.rb
 
+```bash
+rails g controller Objects method_name1 method_name2 ...
+```
+
+i.e.
+```bash
+rails g controller Users index show create
+```
+
 ### Check Routes
 ```bash
 rails routes
