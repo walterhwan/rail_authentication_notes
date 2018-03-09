@@ -122,6 +122,14 @@ end
 :default, :null, :inclusion, :presence
 ```
 
+### Change Columns
+```ruby
+rename_column :table, :old_column, :new_columnx
+add_column :table_name, :new_column
+remove_column :table_name, :column_name
+```
+
+
 # Routes
 
 ### Create New Routes
@@ -204,7 +212,7 @@ def ensure_session_token
 end
 ```
 
-### HTML "methods" and Their Corresponding Controller Action
+### HTTP "methods" and Their Corresponding Controller Action
 i.e if you have object resources
 
 Prefix | http methods | Controller Action | (defalut) URI Pattern
@@ -240,8 +248,8 @@ i.e.
 
 ### Button_to and Link_to
 ```html+erb
-<%= button_to 'my_link_text', aciton_rul, method: :html_method %>
-<%= link_to 'my_link_text', aciton_rul, method: :html_method %>
+<%= button_to 'my_link_text', aciton_rul, method: :http_method %>
+<%= link_to 'my_link_text', aciton_rul, method: :http_method %>
 ```
 i.e.
 ```html+erb
