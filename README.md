@@ -12,6 +12,7 @@ rails new app_name --database=postgresql
 ### Add useful gems
 ```ruby
 # Gemfile
+
 gem 'bcrypt'
 
 group :development do
@@ -19,13 +20,12 @@ group :development do
   gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'annotate'
-  gem 'faker'
 end
 ```
 
-### Reset Database
+### Create Database
 ```ruby
-rails db:reset
+rails db:create
 ```
 
 # To-do list when adding a new feature/resource
@@ -51,7 +51,7 @@ alias ber='bundle exec rspec'
 rails g migration CreateObjects
 ```
 
-### Re-create database, migrate your current schema, updates
+### Re-create database, migrate your current schema, updates test database schema to mirror the development DB
 ```bash
 rails db:reset db:migrate db:test:load
 ```
@@ -65,7 +65,7 @@ i.e.
 rails g model User username:string password_digest:string session_token:string
 ```
 
-### Generate Controllers
+### Generate Controller
 ```bash
 rails g controller Objects
 ```
@@ -81,6 +81,11 @@ rails routes
 rails c
 ```
 
+### Start Rails Server
+```bash
+rails s
+```
+
 # Useful Alias
 ```ruby
 alias rr='rails routes'
@@ -88,7 +93,7 @@ alias rsgm='rails g migration'
 alias rsm='rails db:migrate'
 ```
 
-# General User Table
+# Generate User Table
 ```ruby
 def change
   create_table :users do |t|
@@ -103,11 +108,41 @@ def change
 end
 ```
 
-### Oterh column attributes
+### Other column attributes
 ```ruby
 :default, :null, :inclusion, :presence
 ```
 
+# Routes
+
+### Create New Routes
+```ruby
+resources :objects
+```
+
+### Only add some routes
+```ruby
+resources :objects, only: [:action1, :action2]
+```
+### Nested Routes
+```ruby
+resources :objects do
+  resources :sub_objects
+end
+```
+### Add custom routes
+```ruby
+http_verb 'url_Path', to: 'url_pattern', as: 'prefix_verb'
+```
+i.e.
+```ruby
+get '/bands/:band_id/albums/new', to: 'albums#new', as: 'new_band_album'
+```
+this will create a route
+```bash
+Prefix Verb           URI Pattern                          Controller#Action
+new_band_album GET    /bands/:band_id/albums/new(.:format) albums#new
+```
 
 # BCrypt
 
@@ -163,7 +198,7 @@ end
 ### HTML "methods" and Their Corresponding Controller Action
 i.e if you have object resources
 
-Prefix | HTML methods | Controller Action | (defalut) URI Pattern
+Prefix | http methods | Controller Action | (defalut) URI Pattern
 --- | --- | --- | ---
 objects | GET | index | /objects
 new_object | GET | new | /objects/new
@@ -176,7 +211,7 @@ object | GET | show | /objects/:id
 
 # View Helpers
 `app/helpers/application_helper.rb`
-This helper method should be put right after every `<form>` tag to enable CSRF protection
+This helper method should be put inside every `<form>` tag to enable CSRF protection
 ```ruby
 def auth_token_input
     "<input type=\"hidden\"name=\"authenticity_token\"
@@ -186,7 +221,7 @@ end
 
 # Rails Views Code Snippet
 
-### Use PATCH or DELETE HTML Method in `<form>` tag
+### Use PATCH or DELETE http Method in `<form>` tag
 ```html
 <input type="hidden" name="_method" value="PATCH">
 <input type="hidden" name="_method" value="DELETE">

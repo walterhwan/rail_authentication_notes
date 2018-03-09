@@ -3,32 +3,38 @@ Start Your Rails Project	/Users/walter/Documents/Programing/Ruby Projects/AppAca
 Creating a new rails project in postgre	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Creating a new rails project in postgre$/;"	function	line:7
 Add useful gems	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Add useful gems$/;"	function	line:12
 Gemfile	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Gemfile$/;"	function	line:14
-Reset Database	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Reset Database$/;"	function	line:26
+Create Database	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Create Database$/;"	function	line:26
 To-do list when adding a new feature/resource	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# To-do list when adding a new feature\/resource$/;"	function	line:31
 Rails Commands	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Rails Commands$/;"	function	line:38
 Add bash alias	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Add bash alias$/;"	function	line:40
 Generate Migration	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Migration$/;"	function	line:49
-Re-create database, migrate your current schema, updates	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Re-create database, migrate your current schema, updates$/;"	function	line:54
+Re-create database, migrate your current schema, updates test database schema to mirror the development DB	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Re-create database, migrate your current schema, updates test database schema to mirror the development DB$/;"	function	line:54
 Generate Model and Pre-populate Migration at once	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Model and Pre-populate Migration at once$/;"	function	line:59
-Generate Controllers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Controllers$/;"	function	line:68
+Generate Controller	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Controller$/;"	function	line:68
 Check Routes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Check Routes$/;"	function	line:74
 Command line in Rails	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Command line in Rails$/;"	function	line:79
-Useful Alias	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Useful Alias$/;"	function	line:84
-General User Table	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# General User Table$/;"	function	line:91
-Oterh column attributes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Oterh column attributes$/;"	function	line:106
-BCrypt	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# BCrypt$/;"	function	line:112
-Digests a password and builds a Password object.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Digests a password and builds a Password object.$/;"	function	line:114
-Builds a Password object for the digest.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Builds a Password object for the digest.$/;"	function	line:119
-Checks if a password matches a digest.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Checks if a password matches a digest.$/;"	function	line:124
-Check if a password_digest String is indeed create by a password	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Check if a password_digest String is indeed create by a password$/;"	function	line:129
-Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Session Token$/;"	function	line:134
-Generate Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Session Token$/;"	function	line:136
-Reset Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Reset Session Token$/;"	function	line:143
-Ensure Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Ensure Session Token$/;"	function	line:152
-HTML "methods" and Their Corresponding Controller Action	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### HTML "methods" and Their Corresponding Controller Action$/;"	function	line:163
-View Helpers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# View Helpers$/;"	function	line:177
-Rails Views Code Snippet	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Rails Views Code Snippet$/;"	function	line:187
-Use PATCH or DELETE HTML Method in `<form>` tag	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Use PATCH or DELETE HTML Method in `<form>` tag$/;"	function	line:189
-Button_to and Link_to	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Button_to and Link_to$/;"	function	line:197
-Insert a partial to a erb file	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Insert a partial to a erb file$/;"	function	line:207
-Record error messages in flash cookie	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Record error messages in flash cookie$/;"	function	line:233
+Start Rails Server	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Start Rails Server$/;"	function	line:84
+Useful Alias	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Useful Alias$/;"	function	line:89
+Generate User Table	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Generate User Table$/;"	function	line:96
+Other column attributes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Other column attributes$/;"	function	line:111
+Routes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Routes$/;"	function	line:116
+Create New Routes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Create New Routes$/;"	function	line:118
+Only add some routes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Only add some routes$/;"	function	line:123
+Nested Routes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Nested Routes$/;"	function	line:127
+Add custom routes	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Add custom routes$/;"	function	line:133
+BCrypt	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# BCrypt$/;"	function	line:147
+Digests a password and builds a Password object.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Digests a password and builds a Password object.$/;"	function	line:149
+Builds a Password object for the digest.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Builds a Password object for the digest.$/;"	function	line:154
+Checks if a password matches a digest.	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Checks if a password matches a digest.$/;"	function	line:159
+Check if a password_digest String is indeed create by a password	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Check if a password_digest String is indeed create by a password$/;"	function	line:164
+Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Session Token$/;"	function	line:169
+Generate Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Generate Session Token$/;"	function	line:171
+Reset Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Reset Session Token$/;"	function	line:178
+Ensure Session Token	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Ensure Session Token$/;"	function	line:187
+HTML "methods" and Their Corresponding Controller Action	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### HTML "methods" and Their Corresponding Controller Action$/;"	function	line:198
+View Helpers	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# View Helpers$/;"	function	line:212
+Rails Views Code Snippet	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^# Rails Views Code Snippet$/;"	function	line:222
+Use PATCH or DELETE http Method in `<form>` tag	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Use PATCH or DELETE http Method in `<form>` tag$/;"	function	line:224
+Button_to and Link_to	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Button_to and Link_to$/;"	function	line:232
+Insert a partial to a erb file	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Insert a partial to a erb file$/;"	function	line:242
+Record error messages in flash cookie	/Users/walter/Documents/Programing/Ruby Projects/AppAcademy/rail_authenticaiton_notes/README.md	/^### Record error messages in flash cookie$/;"	function	line:268
