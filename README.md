@@ -117,7 +117,7 @@ rails s
 
 
 # Generate User Table
-Database validations may not matter in this assessment
+Database level validations may not matter in this assessment
 ```ruby
 def change
   create_table :users do |t|
