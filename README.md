@@ -28,6 +28,13 @@ end
 rails db:create
 ```
 
+# How to approach the assessment
+1. Add all the models (i.e User, Link, and Comment)
+  * Add `validates`, `after_initialize :ensure_session_token`
+  * Add relaitons such as `has_many`, `belongs_to` and `has_one`
+  * Add `object_params` private methods
+  * Add authentication methods in `user.rb`
+
 # To-do list when adding a new feature/resource
 * Migrations
   + `rails g migration CreateObjects`
