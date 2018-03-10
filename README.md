@@ -59,7 +59,7 @@ Be careful when you type alias that are similar to default command like `rm`. Yo
 ```ruby
 alias rr='rails routes'
 alias rgm='rails g migration'
-alias rmtl='rails db:migrate db:test:load'
+alias rdbmt='rails db:migrate db:test:load'
 
 alias rdbm='rails db:migrate'
 alias gm='rails g model'
