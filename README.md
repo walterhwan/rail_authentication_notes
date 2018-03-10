@@ -32,8 +32,12 @@ rails db:create
 1. Add all the models (i.e User, Link, and Comment)
   * Add `validates`, `after_initialize :ensure_session_token`
   * Add relaitons such as `has_many`, `belongs_to` and `has_one`
-  * Add `object_params` private methods
   * Add authentication methods in `user.rb`
+2. Add all the controllers
+  * Write `sign_in!`, `sing_out`, and `current_user` methods in `ApplicationController` (and add `helper_method`)
+  * Add routes i.e. write `resources` in `routes.rb`
+  * Add `object_params` private methods
+3. Create all the views
 
 # To-do list when adding a new feature/resource
 * Migrations
