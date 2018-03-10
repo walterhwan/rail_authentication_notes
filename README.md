@@ -30,7 +30,7 @@ rails db:create
 
 # To-do list when adding a new feature/resource
 * Migrations
-  + `rails g migration CreateObject`
+  + `rails g migration CreateObjects`
 * Model definition (validations, associations, helper methods)
   + `validates :username, :password_digest, :session_token, presence: true`
   + `validates :password, length: { minimum: 6, allow_nil: true }`
