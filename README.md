@@ -142,6 +142,7 @@ end
 rename_column :table, :old_column, :new_columnx
 add_column :table_name, :new_column
 remove_column :table_name, :column_name
+add_index :table_name, :column_name, unique: true
 ```
 
 
