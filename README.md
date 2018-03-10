@@ -38,7 +38,8 @@ rails db:create
   + `belongs_to`, `has_many`, `has_one`
   + `helper_methods: `
 * Routes
-  +  
+  + resources :objects
+  + resource :object
 * Controller + controller actions
 * Views (should coincide with the actions that render them)
 
@@ -51,6 +52,18 @@ alias my_command='long bash commands'
 For example, if you want to use ```ber``` as ```bundle exec rspec```
 ```bash
 alias ber='bundle exec rspec'
+```
+
+## Useful Alias
+Be careful when you type alias that are similar to default command like `rm`. You might accidently delete something.
+```ruby
+alias rr='rails routes'
+alias rgm='rails g migration'
+alias rmtl='rails db:migrate db:test:load'
+
+alias rdbm='rails db:migrate'
+alias gm='rails g model'
+alias gc='rails g controller'
 ```
 
 ### Generate Migration
@@ -102,17 +115,6 @@ rails c
 rails s
 ```
 
-# Useful Alias
-Be careful when you type alias that are similar to default command like `rm`. You might accidently delete something.
-```ruby
-alias rr='rails routes'
-alias rgm='rails g migration'
-alias rmtl='rails db:migrate db:test:load'
-
-alias rdbm='rails db:migrate'
-alias gm='rails g model'
-alias gc='rails g controller'
-```
 
 # Generate User Table
 Database validations may not matter in this assessment
