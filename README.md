@@ -29,11 +29,18 @@ rails db:create
 ```
 
 # To-do list when adding a new feature/resource
-+ Migrations
-+ Model definition (validations, associations, helper methods)
-+ Routes
-+ Controller + controller actions
-+ Views (should coincide with the actions that render them)
+* Migrations
+  + `rails g migration CreateObject`
+* Model definition (validations, associations, helper methods)
+  + `validates :username, :password_digest, :session_token, presence: true`
+  + `validates :password, length: { minimum: 6, allow_nil: true }`
+
+  + `belongs_to`, `has_many`, `has_one`
+  + `helper_methods: `
+* Routes
+  +  
+* Controller + controller actions
+* Views (should coincide with the actions that render them)
 
 # Rails Commands
 
@@ -96,13 +103,19 @@ rails s
 ```
 
 # Useful Alias
+Be careful when you type alias that are similar to default command like `rm`. You might accidently delete something.
 ```ruby
 alias rr='rails routes'
-alias rsgm='rails g migration'
-alias rsm='rails db:migrate'
+alias rgm='rails g migration'
+alias rmtl='rails db:migrate db:test:load'
+
+alias rdbm='rails db:migrate'
+alias gm='rails g model'
+alias gc='rails g controller'
 ```
 
 # Generate User Table
+Database validations may not matter in this assessment
 ```ruby
 def change
   create_table :users do |t|
@@ -253,7 +266,8 @@ i.e.
 ```
 i.e.
 ```html+erb
-<%= button_to 'Log out', session_url, method: :delete %>
+<%= link_to 'Sign In', session_url %>
+<%= button_to 'Sign Out', session_url, method: :delete %>
 ```
 
 ### Create a `_form.html.erb` so that both `new.html.erb` and `edit.html.erb` can use the partial
