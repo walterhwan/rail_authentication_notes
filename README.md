@@ -74,7 +74,7 @@ def require_signed_in
   * Add routes i.e. write `resources` in `routes.rb`
   * In each controller files, add their controller action (i.e. `indexx`, `new`, `create`, etc)
   * Add needed `.html.erb` files
-  * Add `object_params` private methods
+  * Add `object_params` private methods `params.require(:object).permit(:colum_1, :column2)`
 
 #### Create all the views
 
@@ -190,9 +190,13 @@ end
 ### Change Columns
 ```ruby
 rename_column :table, :old_column, :new_columnx
+
 add_column :table_name, :new_column
+
 remove_column :table_name, :column_name
+
 add_index :table_name, :column_name, unique: true
+
 change_column :table_name, :column_name, :new_data_type
 ```
 
@@ -322,6 +326,10 @@ i.e.
 ```html+erb
 <%= link_to 'Sign In', session_url %>
 <%= button_to 'Sign Out', session_url, method: :delete %>
+
+<a href="<%= link_url(link) %>"><%= link.url %></a>
+<-- is the same as -->
+<%= link_to link.url, link_url(link) %>
 ```
 
 ### Create a `_form.html.erb` so that both `new.html.erb` and `edit.html.erb` can use the partial
