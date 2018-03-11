@@ -99,19 +99,20 @@ def require_signed_in
 ```bash
 alias my_command='long bash commands'
 ```
-For example, if you want to use ```ber``` as ```bundle exec rspec```
+For example, if you want to use ```ber``` as ```bundle exec```
 ```bash
-alias ber='bundle exec rspec'
+alias ber='bundle exec'
 ```
 
 ## Useful Alias
 Be careful when you type alias that are similar to default command like `rm`. You might accidently delete something.
 ```ruby
+alias ber='bundle exec'
 alias rr='rails routes'
+
 alias rgm='rails g migration'
 alias rdbmt='rails db:migrate db:test:load'
 
-alias rdbm='rails db:migrate'
 alias gm='rails g model'
 alias gc='rails g controller'
 ```
@@ -121,10 +122,10 @@ alias gc='rails g controller'
 rails g migration CreateObjects
 ```
 
-### Re-create database, migrate your current schema, updates test database schema to mirror the development DB
+<!-- ### Re-create database, migrate your current schema, updates test database schema to mirror the development DB
 ```bash
 rails db:reset db:migrate db:test:load
-```
+``` -->
 
 ### Generate Model and Pre-populate Migration at once
 ```ruby
@@ -155,7 +156,7 @@ rails g controller Users index show create
 rails routes
 ```
 
-### Command line in Rails
+### Command line in Rails (pry)
 ```bash
 rails c
 ```
@@ -187,7 +188,7 @@ end
 :default, :null, :inclusion, :presence
 ```
 
-### Change Columns
+### Change/Modify Columns
 ```ruby
 rename_column :table, :old_column, :new_columnx
 
@@ -220,7 +221,7 @@ end
 ```
 ### Add custom routes
 ```ruby
-http_verb 'url_Path', to: 'url_pattern', as: 'prefix_verb'
+http_verb 'url_Pattern', to: 'controller#action', as: 'prefix_verb'
 ```
 i.e.
 ```ruby
