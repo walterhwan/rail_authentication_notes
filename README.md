@@ -29,18 +29,58 @@ rails db:create
 ```
 
 # How to approach the assessment
-1. Add all the models (i.e User, Link, and Comment)
-  * Add `validates`, `after_initialize :ensure_session_token`
+### Add all the models (i.e User, Link, and Comment)
+  * Add `validates`
   * Add relaitons such as `has_many`, `belongs_to` and `has_one`
-  * Add authentication methods in `user.rb`
-2. Add all the controllers
-  * Write `sign_in!`, `sing_out`, and `current_user` methods in `ApplicationController` (and add `helper_method`)
+
+##### Add authentication methods in `user.rb`
+```ruby
+validates :username, :password_digest, :session_token, presence: true
+validates :password, length: { minimum: 6, allow_nil: true}
+after_initialize :ensure_session_token
+
+def self.find_by_credentials(username, password)
+
+def ensure_session_token
+
+def reset_session_token
+
+def password=(password)
+
+def is_password?(password)
+
+def self.generate_session_token
+```
+
+##### Add methods in ApplicationController
+
+```ruby
+helper_method :current_user, :signed_in?
+
+def current_user
+
+def sign_in(user)
+
+def signed_in?
+
+def sign_out
+
+def require_signed_in
+```
+
+### Add all the controllers
+
+  * Add controllers using `rails g controller Objects`
   * Add routes i.e. write `resources` in `routes.rb`
+  * In each controller files, add their controller action (i.e. `indexx`, `new`, `create`, etc)
+  * Add needed `.html.erb` files
   * Add `object_params` private methods
-3. Create all the views
+
+#### Create all the views
 
 # To-do list when adding a new feature/resource
 * Migrations
+
   + `rails g migration CreateObjects`
 * Model definition (validations, associations, helper methods)
   + `validates :username, :password_digest, :session_token, presence: true`
@@ -49,8 +89,8 @@ rails db:create
   + `belongs_to`, `has_many`, `has_one`
   + `helper_methods: `
 * Routes
-  + resources :objects
-  + resource :object
+  + `resources :objects`
+  + `resource :object`
 * Controller + controller actions
 * Views (should coincide with the actions that render them)
 
