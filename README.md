@@ -29,8 +29,8 @@ rails db:create
 ```
 
 # How to approach the assessment
-### Add all the models (i.e User, Link, and Comment)
-  * Add `validates`
+### Add all the models (i.e User, Link, and Comment) using `rails g model Objects`
+  * Add `validates :column_name, presence: true`
   * Add relaitons such as `has_many`, `belongs_to` and `has_one`
 
 ##### Add authentication methods in `user.rb`
@@ -82,9 +82,8 @@ def require_signed_in
 * Migrations
 
   + `rails g migration CreateObjects`
-* Model definition (validations, associations, helper methods)
+* Model definition
   + `validates :username, :password_digest, :session_token, presence: true`
-  + `validates :password, length: { minimum: 6, allow_nil: true }`
 
   + `belongs_to`, `has_many`, `has_one`
   + `helper_methods: `
@@ -194,6 +193,7 @@ rename_column :table, :old_column, :new_columnx
 add_column :table_name, :new_column
 remove_column :table_name, :column_name
 add_index :table_name, :column_name, unique: true
+change_column :table_name, :column_name, :new_data_type
 ```
 
 
