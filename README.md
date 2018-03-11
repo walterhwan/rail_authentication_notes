@@ -72,11 +72,11 @@ def require_signed_in
 
   * Add controllers using `rails g controller Objects`
   * Add routes i.e. write `resources` in `routes.rb`
-  * In each controller files, add their controller action (i.e. `indexx`, `new`, `create`, etc)
+  * In each controller files, add their controller action (i.e. `index`, `new`, `create`, etc)
   * Add needed `.html.erb` files
   * Add `object_params` private methods `params.require(:object).permit(:colum_1, :column2)`
 
-#### Create all the views
+<!-- #### Create all the views
 
 # To-do list when adding a new feature/resource
 * Migrations
@@ -91,7 +91,7 @@ def require_signed_in
   + `resources :objects`
   + `resource :object`
 * Controller + controller actions
-* Views (should coincide with the actions that render them)
+* Views (should coincide with the actions that render them) -->
 
 # Rails Commands
 
