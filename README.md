@@ -284,7 +284,7 @@ def ensure_session_token
 end
 ```
 
-### HTTP "methods" and Their Corresponding Controller Action
+### HTTP "methods" and Their Corresponding Controller Action by default
 i.e if you have object resources
 
 Prefix | http methods | Controller Action | (defalut) URI Pattern
@@ -306,16 +306,25 @@ def auth_token_input
     "<input type=\"hidden\"name=\"authenticity_token\"
       value=\"#{ form_authenticity_token }\">".html_safe
 end
+
+```
+Or if you prefer copy-past in erb
+```html+erb
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 ```
 
 # Rails Views Code Snippet
 
-### Use PATCH or DELETE http Method in `<form>` tag
+### Use PATCH http Method in `<form>` tag (in other words, when you are trying to update or edit)
 ```html
 <input type="hidden" name="_method" value="PATCH">
-<input type="hidden" name="_method" value="DELETE">
 ```
 i.e.
+
+### Use DELETE method in `button_to` or `link_to`
+```html
+<%= link_to 'my_link_text', aciton_rul, method: :http_method %>
+```
 
 
 ### Button_to and Link_to
@@ -373,4 +382,17 @@ i.e. Insert a partial with local variables
 flash[:errors] = object.errors.full_messages
 
 flash.now[:errors] = object.errors.full_messages
+```
+
+### Display error messages in erb files
+```html+erb
+<!-- lazy version -->
+<% flash.each do |key, value| %>
+  <%= key %> <%= value %>
+<% end %>
+
+<!-- the 'correct' way according to stack-overflow -->
+<% flash.each do |key, value| %>
+  <%= content_tag :div, value, class: "flash #{key}" %>
+<% end %>
 ```
