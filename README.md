@@ -396,3 +396,11 @@ flash.now[:errors] = object.errors.full_messages
   <%= content_tag :div, value, class: "flash #{key}" %>
 <% end %>
 ```
+
+# How to fix `rails generate` commands hang/conflict when trying to create a model
+
+```ruby
+bundle config --delete bin    # Turn off Bundler's stub generator
+rails app:update:bin          # Use the new Rails 5 executables
+git add bin                   # Add bin/ to source control
+```
