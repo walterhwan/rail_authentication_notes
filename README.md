@@ -293,10 +293,10 @@ objects | GET | index | /objects
 new_object | GET | new | /objects/new
 edit_object | GET | edit | /objects/:id
 object | GET | show | /objects/:id
- | Post | create | /objects
- | PATCH | update | /objects/:id
- | PUT | update | /objects/:id
- | DELETE | destroy | /objects/:id
+  | Post | create | /objects
+  | PATCH | update | /objects/:id
+  | PUT | update | /objects/:id
+  | DELETE | destroy | /objects/:id
 
 # View Helpers
 `app/helpers/application_helper.rb`
