@@ -2,6 +2,7 @@
 
 This document provide collection of short reference of how to write various rails code in a single page so it is easier to search. However, it won't explain exactly how to use them.
 
+---
 # Start Your Rails Project
 
 ### Creating a new rails project in postgre
@@ -28,6 +29,7 @@ end
 rails db:create
 ```
 
+---
 # How to approach the assessment
 ### Add all the models (i.e User, Link, and Comment) using `rails g model Objects`
   * Add `validates :column_name, presence: true`
@@ -93,6 +95,7 @@ def require_signed_in
 * Controller + controller actions
 * Views (should coincide with the actions that render them) -->
 
+---
 # Rails Commands
 
 ### Add bash alias
@@ -110,16 +113,16 @@ Be careful when you type alias that are similar to default command like `rm`. Yo
 alias ber='bundle exec'
 alias rr='rails routes'
 
-alias rgm='rails g migration'
-alias rdbmt='rails db:migrate db:test:load'
+alias rgm='bundle exec rails g migration'
+alias rdbmt='bundle exec rails db:migrate db:test:load'
 
-alias gm='rails g model'
-alias gc='rails g controller'
+alias gm='bundle exec rails g model'
+alias gc='bundle exec rails g controller'
 ```
 
 ### Generate Migration
 ```bash
-rails g migration CreateObjects
+bundle exec rails g migration CreateObjects
 ```
 
 <!-- ### Re-create database, migrate your current schema, updates test database schema to mirror the development DB
@@ -129,26 +132,26 @@ rails db:reset db:migrate db:test:load
 
 ### Generate Model and Pre-populate Migration at once
 ```ruby
-rails g model Object col_name1:datatype col_name2:datatype ...
+bundle exec rails g model Object col_name1:datatype col_name2:datatype ...
 ```
 i.e.
 ```ruby
-rails g model User username:string password_digest:string session_token:string
+bundle exec rails g model User username:string password_digest:string session_token:string
 ```
 
 ### Generate Controller
 ```bash
-rails g controller Objects
+bundle exec rails g controller Objects
 ```
 this will generate objects_controller.rb
 
 ```bash
-rails g controller Objects method_name1 method_name2 ...
+bundle exec rails g controller Objects method_name1 method_name2 ...
 ```
 
 i.e.
 ```bash
-rails g controller Users index show create
+bundle exec rails g controller Users index show create
 ```
 
 ### Check Routes
@@ -167,6 +170,7 @@ rails s
 ```
 
 
+---
 # Generate User Table
 Database level validations may not matter in this assessment
 ```ruby
@@ -202,6 +206,7 @@ change_column :table_name, :column_name, :new_data_type
 ```
 
 
+---
 # Routes
 
 ### Create New Routes
@@ -219,6 +224,19 @@ resources :objects do
   resources :sub_objects
 end
 ```
+### Namespaced routes
+```ruby
+namespace api do
+  resources :cats
+end
+# bundle exec rails g controller api/cats
+```
+### Add `root` routes
+```ruby
+# TODO: check if this is correct
+root to: 'static_page#root'
+```
+
 ### Add custom routes
 ```ruby
 http_verb 'url_Pattern', to: 'controller#action', as: 'prefix_verb'
@@ -404,3 +422,5 @@ bundle config --delete bin    # Turn off Bundler's stub generator
 rails app:update:bin          # Use the new Rails 5 executables
 git add bin                   # Add bin/ to source control
 ```
+
+<!-- TODO: add update_attributes -->
